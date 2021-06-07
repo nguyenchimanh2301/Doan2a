@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.head {
+  height: 250px;
+  width: 100%;
+}
+.contain {
+  height: 1000px;
+  border: 1px solid;
+  display: flex;
+}
+.left ul li {
+  line-height: 60px;
+  list-style-type: none;
+  font-size: 30px;
+  padding: 15px;
+  display: block;
+  color: white;
+  border-top: 1px solid wheat;
+  border-bottom: 1px solid black;
+  width: 100%;
+  transition: 0.3s;
+}
+.left ul li:hover {
+  background-color: red;
+  padding-left: 50px;
+}
+.left {
+  height: 103vh;
+  position: fixed;
+  left: 0;
+  background: #042331;
+  left: -27%;
+  transition: all 0.5s ease;
+}
+.left .headd {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: red;
+}
+.right {
+  height: 103vh;
+  flex: 3;
+  width: 100%;
+  display: flex;
+}
+.rightleft {
+  flex: 1;
+  background-color: seagreen;
+}
+.right2 {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+#check {
+  display: none;
+}
+label #btn,
+label #cancel {
+  position: absolute;
+}
+label #btn {
+  font-size: 50px;
+  top: 20px;
+  left: 20px;
+  color: wheat;
+}
+label #cancel {
+  z-index: 1111;
+  left: -350px;
+  top: 0px;
+  font-size: 30px;
+  color: teal;
+  transition: all 0.5s ease;
+  position: fixed;
+}
+#check:checked ~ .left {
+  left: 0;
+  transition: 0.3s;
+}
+#check:checked ~ label #btn {
+  left: 350px;
+  pointer-events: none;
+  opacity: 0;
+}
+#check:checked ~ label #cancel {
+  left: 340px;
+}
+.under {
+  flex: 1;
+  background-color: rgb(0, 132, 255);
+}
+.under div {
+  text-align: center;
+  font-size: 70px;
+  color: rgb(255, 123, 0);
+}
+.above {
+  flex: 4;
+  position: relative;
+}
+.content {
+  position: absolute;
+  top: 0px;
+}
+#but {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
+#dk,
+#huy {
+  padding: 10px;
+  background-color: teal;
+  color: blue;
+}
+#but1 {
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+  width: 100px;
+}
+#dangki {
+  padding: 10px;
+  background-color: teal;
+  color: blue;
+}
+
+#add {
+  padding: 20px;
+  background-color: teal;
+}
+#add i {
+  color: blue;
+  font-size: 20px;
+}
+#themus {
+  color: steelblue;
+  font-size: 30px;
+}
+.adduser {
+  position: fixed;
+  height: 73vh;
+  background-color: white;
+  width: 70%;
+  display: none;
+  z-index: 1;
+  -webkit-animation: anime 0.6s;
+  animation: anime 0.6s;
+}
+
+
+@-webkit-keyframes anime {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes anime {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+
+.table {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+#close {
+  padding: 20px;
+  position: absolute;
+  top: -1;
+  right: -1px;
+}
+#body tr th {
+  color: red;
+  padding-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.tab input {
+  margin-top: 30px;
+  width: 500px;
+  height: 30px;
+}
+#hedd th {
+  color: white;
+  height: 50px;
+  overflow: hidden;
+  background-color: blue;
+}
+.table tr th {
+  float: left;
+  color: green;
+  font-size: 25px;
+  width: 20%;
+  border: 1px solid;
+  overflow: auto;
+  line-height: 50px;
+  outline: none;
+  height: 100px;
+}
+#dm {
+  color: red;
+  font: 40px;
+}
+.table td {
+  float: left;
+  width: 30%;
+}
+.table button {
+  padding: 5px 20px;
+}
+#search {
+  color: steelblue;
+  font-size: 30px;
+}
+
+#themus {
+  font-size: 70px;
+  width: 70%;
+  margin-bottom: 20px;
+}
+#themus1 {
+  font-size: 50px;
+}
+.avt {
+  float: right;
+  display: flex;
+  font-size: 70px;
+}
+.avtg,img{
+  height: 130px;
+  width: 130px;
+  float: right;
+  border-radius:50%;
+}
+[class*="col-"] {
+  width: 100%;
+  float: left;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-0 {
+    width: 0%;
+  }
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  .col-13 {
+    width: 20%;
+  }
+}

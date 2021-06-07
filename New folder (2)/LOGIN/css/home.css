@@ -1,0 +1,769 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+*body{
+    padding: 0;
+    max-width: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+ 
+}
+/* body{
+    background-color: rgb(0, 174, 255);
+} */
+a{
+    text-decoration: none;
+    color: black;
+}
+.nen{
+    position: static;
+    height: 900px;
+    width: 100%;
+}
+.nen img{
+    height: 900px;
+    width: 100%;
+    position: relative;
+    z-index: -100;
+    overflow: hidden;
+}
+#trai{
+    position: absolute;
+    top: 50%;
+    left: 11%;
+    padding: 10;
+    height: 50px;
+    width: 50px;
+    opacity: 0.5;
+}
+.nen i{
+    font-size: 30px;
+    opacity: 0.5;
+}
+#phai{
+    position: absolute;
+    top: 50%;
+    right: 11%;
+    padding: 10;
+    height: 50px;
+    width: 50px;
+    opacity: 0.5;
+}
+.login{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.head1{
+    height: 150px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color:rgb(0, 195, 255);
+    animation:  my 5s infinite;
+    animation-direction: alternate;
+}
+.head1 h1{
+    color:red;
+    font-size: 65px;
+   
+}
+@keyframes my {
+    0%   {background: red; left: 0px; top: 0px;}
+  25%  {background: yellow; left: 0px; top: 0px;}
+  50%  {background: blue; left: 0px; top: 0px;}
+  75%  {background: green; left: 0px; top: 0px;}
+  100% {background: red; left: 0px; top: 0px;}
+}
+.head1 img{
+    height: 150px;
+    width: 300px;
+    float: left;
+}
+.headleft{
+    right: 10px;
+    top: 0px;
+    height: 200px;
+    position: absolute;
+}
+.headleft i{
+    font-size: 25px;
+    padding: 10px;
+    background-color: rgb(194, 255, 80);
+    border-radius: 5px;
+    margin: 3px;
+}
+.head1 .headleft h3{
+    position: absolute;
+    text-align: center;
+    color:blue;
+    top: 10px;
+    left: 0px;
+    font-size: 30px;
+}
+.head{
+    height: 120px;
+    text-align: center;
+    position: relative;
+    background-color: wheat;
+}
+.head ul li{
+    position: relative;
+}
+.head ul li::after{
+    content: '';
+    position:absolute;
+    height: 5px;
+    width: 0px;
+    background: red;
+    border-radius: 15px;
+    bottom: 10px;
+    right: 12%;
+}
+.head ul li:hover:after{
+    width: 100%;
+    left: 0px;
+    transition: linear 0.3s;
+}
+.head ul li:hover{
+    color: teal;
+    transition: linear 0.3s;
+}
+.submenu{
+    display: none;
+}
+
+
+.head ul li {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 20px;
+}
+
+.head ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.head ul li:hover .submenu ul li
+{
+    display: block;
+  background-color: wheat;
+    margin: 10px;
+    width: 120px;
+}
+.find{
+    height: 30px;
+    width: 230px;
+    position: relative;
+    float: right;
+    border-radius: 50px;
+    transform: translate(-50%,-50%);
+    top: -10px;
+}
+.find input{
+    height: 50px;
+    width: 230px;
+    border-radius: 50px;
+}
+.sbt{
+    color:white;
+    float: right;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.find .sbt i{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    float: right;
+    padding: 10px;
+    background-color: crimson;
+    border-radius: 50%;
+    color: black;
+}
+.find .textfind{
+    border: none;
+    background:none;
+    transition: 0.4s;
+    outline: none;
+    width: 0px;
+}
+
+.find:hover > .textfind
+{
+    width: 200px;
+    padding: 0 6px;
+    color:blue;
+    background-color: chartreuse;
+}
+.bodyright
+{
+    float: right;
+    height: 4000px;
+}
+.bodycenter{
+    display: flex;
+    height: 1600px;
+}
+.bodycenter hr{
+    width: 100%;
+    height: 3px;
+    background-color: red;
+}
+#h3
+{
+    line-height:50px;
+    background-color: red;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+}
+
+#quangcao{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+#quangcao img {
+    height: 400px;
+    width: 100%;
+}
+.noibat{
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    flex:3;
+}
+.box img{
+    height: 500px;
+    width: 100%;
+}
+#t1ct{
+position: absolute;
+bottom: 50px;
+line-height: 34px;
+font-size: 35px;
+color:blue;
+width: 600px;
+font-weight: bold;
+float: left;
+}
+.noibat .box:hover img{
+   transform: scale(1.1);
+    transition:  0.3s;
+}
+#msir
+{
+    height: 460px;
+    flex: 4;
+}
+.tren{
+    display: flex;
+    width: 100%;
+
+}
+.tin img:hover{
+    transform: scale(1.1);
+     transition:  0.3s;
+     overflow: hidden;
+ }
+#t1ct p{
+    color: black;
+    font-size: 15px;
+    display: none;
+}
+#msi img{
+    position: relative;
+    height: 250px;
+    float: right;
+    width: 100%;
+}
+#msi{
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+#msict{
+position: absolute;
+bottom: 0px;
+left: 10%;
+font-size: 40px;
+color:blue;
+font-weight: bold;
+}
+ #msi:hover img{
+    transform: scale(1.1);
+    transition:  0.3s;
+}
+#rss{
+    width: 400px;
+    height: 237px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    flex: 15;
+}
+#rss img{
+    position: relative;
+    width: 100%;
+    height: 237px;
+  
+}
+ #rss:hover img{
+    transform: scale(1.1);
+    transition:  0.3s;
+}
+#rssct{
+    position: absolute;
+    bottom: 15px;
+    left: 18px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#sg{
+    flex: 15;
+    height: 237px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin-right:10px ;
+}
+#sg img{
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 237px;
+}
+#sg:hover img{
+    transform: scale(1.1);
+    transition:  0.3s;
+}
+#sgct{
+    position: absolute;
+    bottom: 15px;
+    left: 18px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+.duoi{
+    margin-top: 10px;
+}
+.tn{
+    display: flex;
+    width: 100%;
+    height: 237px;
+    justify-content: space-between;
+    margin-left: 10px;
+
+}
+.ctlq {
+    display: flex;
+    height: 2400px;
+    justify-content: space-between;
+}
+.contentleft{
+height: 4000px;
+float: left;
+flex: 5;
+display: flex;
+flex-direction: column;
+}
+.contentright{
+    height: 2860px;
+    position: relative;
+    flex: 3;
+}
+#hrlq{
+    width: 300px;
+    float: left;
+    height: 8px;
+    border-radius: 10px;
+    background-color: sandybrown;
+}
+
+.tin{
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.tin3{
+    height: 300px;
+}
+.tin1{
+    flex: 5;
+}
+.tin1 img{
+    height: 250px;
+    width: 100%;
+}
+.tin2{
+    height: 220px;
+    width: 90%;
+    float: left;
+    margin-bottom: 10px;
+}
+.tin2 img{
+    height: 220px;
+    width: 100%;
+    float: left;
+}
+.content1 {
+    height: 300px;
+    position: relative;
+    float: right;
+    margin-left: 20px;
+    width: 100%;
+    flex: 5;
+}
+.content1 a{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 15px;
+  
+}
+.content1 span{
+    padding: 7px;
+    background-color: black;
+    color: blanchedalmond;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+}
+.content1 p{
+    line-height: 20px;
+    font-size: large;
+    position: absolute;
+    top: 100px;
+}
+.contentright h3{
+    position: absolute;
+    line-height:50px;
+    background-color: red;
+    width: 80px;
+    border-radius: 10px;
+    color: white;
+    top: -110px;
+
+}
+.contentright #bvhr{
+    width: 200px;
+    height: 8px;
+    border-radius: 10px;
+    background-color: sandybrown;
+    position: absolute;
+    left: 0px;
+    top: -30px;
+    float: left;
+}
+.youtobe{
+    height: 800px;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    margin-bottom: 50px;
+}
+.yout{
+    height: 400px;
+    margin-left: 40px;
+    margin-bottom: 50px;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+}
+#bvh3{
+    background-color: blue;
+    font-size: 30px;
+    width: 100px;
+}
+.lap{
+    height:300px;
+    display: block;
+    position: relative;
+    text-align: center;
+}
+.lap img{
+    height: 300px;
+    width: 100%;
+}
+.contentlap{
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+.lap .contentlap p{
+    color: blue;
+    font-size: 20px;
+    
+}
+
+.baiviet h4{
+    line-height:50px;
+    background-color: red;
+    width: 160px;
+    border-radius: 10px;
+    color: white;
+}
+.baiviet{
+    height: 700px;
+ 
+}
+#baiviet { 
+    height: 2px;
+    width: 100%;
+    background-color: burlywood;
+    float: left;
+}
+.baiviet1{
+    float: left;
+}
+.baiviet ul {
+    font-size: 25px;
+    line-height: 40px;
+    list-style-type: none;
+    float: left;
+    margin-left: -40px;
+}
+#hr1{
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+.trada{
+    height: 1200px;
+    flex-direction: column;
+    display: flex;
+   
+
+}
+.tradact{
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    line-height: 30px;
+    font-size: 25px;
+    width: 150px;
+}
+.trada2{
+    height:200px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    line-height: 40px;
+    color: salmon;
+}
+.anhtrada img
+{
+height: 150px;
+width: 200px;
+}
+
+.contenttrada{
+    height: 150px;
+}
+.right{
+    height: 1000px;
+    float: right;
+}
+.left{
+    float: left;
+    height: 1000px;
+}
+.body{
+    height: 4000px ;
+    display: flex;
+}
+ .left1{
+    width: 16.66%;
+      
+        
+    }
+.right1{
+    width: 16.66%;
+}
+.quangcaocuoi{
+    height: 500px;
+}
+.quangcaocuoi img{
+    height: 400px;
+    width: 100%;
+}
+
+.foter {
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.801);
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+  }
+  .foter H1 {
+    color: white;
+  }
+  .foter .contenf {
+    max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: space-between;
+  }
+  .net {
+    display: flex;
+    width: 500px;
+    position: absolute;
+    left: 40%;
+    bottom: 20px;
+  }
+  .net i {
+    height: 30px;
+    width: 30px;
+    font-size: 50px;
+    margin: 30px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+  }
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-0{width: 0%;}
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+}
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  @media only screen and (min-width:760px)and (max-width:1024px)
+  {
+      .right{
+          width: 0%;
+      }
+      .left{
+          width:0%
+      }
+      .left1{
+          width: 0%;
+      }
+      .right1{
+          width: 0%;
+      }
+      .headleft{
+          display: none;
+      }
+      .head ul li:not(:nth-child(1),:nth-child(2)){
+          display: none;
+      }
+      .head ul:first-child{
+          display: block;
+          float: left;
+      }
+      .bodycenter{
+          height: 2100px;
+      }
+    .noibat{
+        height: 1000px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+      .tin{
+          display: flex;
+          flex-direction: column;
+          height: 400px;
+      }
+      .tin img{
+          width: 500px;
+      }
+      .tin2{
+          display: none;
+      }
+      .content1 span
+      {
+        display: none;
+      }
+      .content1 p
+      {
+        display: none;
+      }
+      .content1 {
+          height: 200px;
+          flex-direction: column-reverse;
+      }
+      .baiviet{
+          height: 900px;
+      }
+      .trada{
+          height: 1700px;
+      }
+     .trada2{
+         flex-direction: column-reverse;
+         height: 300px;
+     }
+     .anhtrada{
+         display: flex;
+         justify-content: space-around;
+     }
+
+     .content1{
+         margin: 0;
+     }
+    .contentleft{
+        flex: 15;
+    }
+    .contentright{
+        flex: 15;
+    }
+     .body{
+         height: 4300px;
+    }
+  } 

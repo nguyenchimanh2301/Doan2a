@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="/LOGIN/css/admincss/admin.css">
+    <link rel="stylesheet" href="/LOGIN/fontawesome-free-5.15.3-web/css/all.css">
+    <script src="/LOGIN/js/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <div class="contain col-12">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-window-close" id="cancel"></i>
+        </label>
+
+        <div class="left col-13">
+            <div class="headd">
+                Danh mục quản trị </div>
+            <ul>
+                <li><a href="/LOGIN/admin/admin.html"><i class="fas fa-home">TRANG CHỦ</i> </a></li>
+                <li><a href="/LOGIN/admin/admin1.html"><i class="fas fa-envelope">Tin Nhắn</i></a> </li>
+                <li><a href="admin2.html"><i class="fas fa-users">Quản lí người dùng</i></a> </li>
+                <li><a href="/LOGIN/admin/admin3.html"><i class="fas fa-book"> Quản lí danh mục</i></a></li>
+                <li><a href="/LOGIN/admin/admin4.html"><i class="fas fa-pen"> Quản lí bài viết</i></a></li>
+             
+                <li><a href="/LOGIN/DOAN2/web.html/login.html"><i class="fas fa-chart-bar">Thống Kê</i></a> </li>
+                <li><a href="/LOGIN/DOAN2/web.html/login.html"><i class="fas fa-sign-out-alt">Đăng xuất</i></a> </li>
+            </ul>
+        </div>
+        <div class="right col-12">
+            <div class="rightleft "></div>
+            <div class="right2">
+                <div class="under col-12">
+                    <div>
+                        <marquee behavior="" direction="">
+                            <H1>ESPORTS247.VN</H1>
+                        </marquee>
+                    </div>
+                </div>
+
+                <div class="above col-12">
+                    
+            </div>
+        </div>
+    </div>
+    <script>
+        $('document').ready(function () {
+            $("#add").click(function () {
+                $(".adduser").show();
+
+            });
+            $("#close").click(function () {
+                $(".adduser").hide();
+
+            });
+            $(".remove").click(function () {
+                if(confirm("Bạn có chắc muốn xóa")){
+                    $(this).parent().parent().remove();
+                }
+                else{
+                    return false;
+                }     
+            });
+            // var x = [];
+            // $("#dangki").click(function () {
+            // })
+
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="/LOGIN/css/admincss/admin3.css">
+    <link rel="stylesheet" href="/LOGIN/fontawesome-free-5.15.3-web/css/all.css">
+    <script src="/LOGIN/js/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <div class="contain col-12">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-window-close" id="cancel"></i>
+        </label>
+
+        <div class="left col-13">
+            <div class="headd">
+                Danh mục quản trị </div>
+            <ul>
+                <li><a href="/LOGIN/admin/admin.html"><i class="fas fa-home">TRANG CHỦ</i> </a></li>
+                <li><a href="/LOGIN/admin/admin2.html"><i class="fas fa-users">Quản lí người dùng</i></a> </li>
+                <li><a href="/LOGIN/admin/admin3.html"><i class="fas fa-book"> Quản lí danh mục</i></a></li>
+                <li><a href="/LOGIN/admin/admin4.html"><i class="fas fa-pen"> Quản lí bài viết</i></a></li>
+                <li><a href="/LOGIN/DOAN2/web.html/login.html"><i class="fas fa-sign-out-alt">Đăng xuất</i></a> </li>
+            </ul>
+        </div>
+        <div class="right col-12">
+            <div class="rightleft "></div>
+            <div class="right2">
+                <div class="under col-12">
+                    <div>
+                        <marquee behavior="" direction="">
+                            <H1>ESPORTS247.VN</H1>
+                        </marquee>
+                    </div>
+                </div>
+
+
+
+
+                <div class="above col-12">
+                    <div class="adduser col-7">
+                        <button id="close">X</button>
+                        <table class="tab col-12">
+                            <thead>
+                                <tr>
+                                    <td id="adddanhmuc">THÊM DANH MỤC</td>
+                                </tr>
+                            </thead>
+                            <tbody id="body">
+                                <form action="">
+                                    <tr>
+                                        <th>TÊN DANH MỤC</th>
+                                        <td><input type="text" value="" id="dmm" name="tendm" required placeholder="nhập tên danh mục">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>THÔNG TIN LIÊN QUAN</th>
+                                        <td><input type="text" value="" id="content" name="name"
+                                                placeholder="nhập thông tin về danh mục"></td>
+                                    </tr>
+                                   
+                                    <div id="but">
+                                        <button type="submit" id="dk">check</button>
+                                        <button id="huy" type="reset" name="content">HỦY</button>
+                                    </div>
+                                   
+                                </form>
+                                <div id="but1">
+                                    <button id="dang">THÊM</button>
+                                </div>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="content col-12">
+                        <table class="table col-12" style="border: 1px solid red;">
+                            <tbody id="tbody col-12">
+                                <tr>
+                                    <td id="dm">DANH SÁCH CÁC DANH MỤC</td>
+                                </tr>
+                                <tr>
+                                    <td><button id="add"><i class="fas fa-calendar-plus" id="addd"></i></button>
+                                   
+                       
+                                </tr>
+                                <tr id="search-icon">
+                                    <td >
+                                        <label for="timkiem"><i class="fas fa-search"><input type="text" id="timkiem">
+                                   </i></label></td>
+                                </tr>
+                                <tr id="namedm"> 
+                                    <th>Tên danh mục</th>
+                                    <th>Thông tin liên quan</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                                <tr>
+                                    <th>ESPORTS</th>
+                                    <th> nmanh230101hy</th>
+    
+                                    <th><button class="remove"><i class="fas fa-trash-alt"></i></button></th>
+                                </tr>
+                                <tr>
+                                    <th>TRONG NƯỚC</th>
+                                    <th> nmanh230101hy</th>
+                                 
+                                    <th><button class="remove" ><i class="fas fa-trash-alt"></i></button></th>
+                                </tr>
+                                <tr>
+                                    <th>MOBILE</th>
+                                    <th> nmanh230101hy</th>
+                                 
+                                    <th><button class="remove"><i class="fas fa-trash-alt"></i></button></th>
+                                </tr>
+                                <tr>
+                                    <th>TIN TỨC</th>
+                                    <th> nmanh230101hy</th>
+                                 
+                                    <th><button class="remove"><i class="fas fa-trash-alt"></i></button></th>
+                                </tr>
+                                <tr>
+                                    <th>QUẢNG CÁO</th>
+                                    <th> nmanh230101hy</th>
+                                 
+                                    <th><button class="remove"><i class="fas fa-trash-alt"></i></button></th>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $('document').ready(function () {
+            $("#add").click(function () {
+                $(".adduser").show();
+
+            });
+            $("#close").click(function () {
+                $(".adduser").hide();
+
+            });
+            $(".remove").click(function () {
+                if(confirm("Bạn có chắc muốn xóa")){
+                    $(this).parent().parent().remove();
+                }
+                else{
+                    return false;
+                }     
+            });
+            $("#dang").click(function(){
+                var dm = $('input[name ="tendm"]').val();
+                var content = $('input[name="name"]').val();
+                var string = '<tr><th>'+dm+'</th> <th>'+content+'</th></tr>'
+                $('#tbody').append(string);
+            });
+            
+
+        });
+    </script>
+
+
+</body>
+
+</html>

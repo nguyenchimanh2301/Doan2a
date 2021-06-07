@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="/LOGIN/css/admincss/admin2.css">
+    <link rel="stylesheet" href="/LOGIN/fontawesome-free-5.15.3-web/css/all.css">
+    <script src="/LOGIN/js/jquery-3.6.0.js"></script>
+</head>
+
+<body>
+
+    <div class="contain col-12">
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-window-close" id="cancel"></i>
+        </label>
+
+        <div class="left col-13">
+            <div class="headd">
+                Danh mục quản trị </div>
+            <ul>
+                li><a href="/LOGIN/admin/admin.html"><i class="fas fa-home">TRANG CHỦ</i> </a></li>
+                <li><a href="/LOGIN/admin/admin1.html"><i class="fas fa-envelope">Tin Nhắn</i></a> </li>
+                <li><a href="admin2.html"><i class="fas fa-users">Quản lí người dùng</i></a> </li>
+                <li><a href="/LOGIN/admin/admin3.html"><i class="fas fa-book"> Quản lí danh mục</i></a></li>
+                <li><a href="/LOGIN/admin/admin4.html"><i class="fas fa-pen"> Quản lí bài viết</i></a></li>
+             
+                <li><a href="/LOGIN/DOAN2/web.html/login.html"><i class="fas fa-chart-bar">Thống Kê</i></a> </li>
+                <li><a href="/LOGIN/DOAN2/web.html/login.html"><i class="fas fa-sign-out-alt">Đăng xuất</i></a> </li>
+            </ul>
+        </div>
+        <div class="right col-12">
+            <div class="rightleft "></div>
+            <div class="right2">
+                <div class="under col-12">
+                    <div>
+                        <marquee behavior="" direction="">
+                            <H1>ESPORTS247.VN</H1>
+                        </marquee>
+                    </div>
+                </div>
+                <div class="above col-12">
+                    <div class="adduser col-7">
+                        <button id="close">X</button>
+                        <table class="tab col-12">
+                            <thead>
+                                <tr>
+                                    <td id="themus1">THÊM NGƯỜI DÙNG</td>
+                                </tr>
+                            </thead>
+                            <tbody id="body">
+                                <form action="">
+                                    <tr>
+                                        <th>Họ tên</th>
+                                        <td><input type="text" value="" id="name" name="ten" required
+                                                placeholder="nhập họ tên">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>tên tài khoản</th>
+                                        <td><input type="text" value="" id="username" name="account"
+                                                placeholder="nhập tên tài khoản đăng kí"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>mật khẩu</th>
+                                        <td><input type="text" value="" id="pass" placeholder="nhập mật khẩu"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>nhập lại mật khẩu</th>
+                                        <td><input type="text" value="" id="pass2" placeholder="nhập lại mật khẩu"></td>
+                                    </tr>
+                                    <tr>
+                                        <th> email đăng kí</th>
+                                        <td><input type="text" value="" name="mail" placeholder="nhập email đăng kí">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>số điện thoại đăng kí</th>
+                                        <td><input type="text" value="" name="sdt" placeholder="nhập số điện thoại">
+                                        </td>
+                                    </tr>
+
+                                    <div id="but">
+                                        <button type="submit" id="dk">check</button>
+                                        <button id="huy" type="reset">HỦY</button>
+                                    </div>
+
+
+                                </form>
+                                <div id="but1">
+                                    <button id="dangki">ĐĂNG KÍ</button>
+                                </div>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="content col-12">
+                        <table class="table col-12">
+                            <tbody id="adder">
+                                <tr>
+                                    <td id="themus">Danh Sách người dùng đăng nhập</td>
+                                    <td id="avt">
+                                        <div class="avtg">
+                                            <img src="/LOGIN/IMG2//hinh-anh-con-meo-cute1.jpg" alt="">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><button id="add"><i class="fas fa-user-plus" id="addd"></i></button></td>
+
+                                    <td><label for="search"><i class="fas fa-search" id="add"></i></label> <input
+                                            type="text" id="search"></i></i></button></td>
+                                </tr>
+                                <tr id="hedd">
+                                    <th>Họ tên</th>
+                                    <th>tên tài khoản</th>
+                                    <th> email </th>
+                                    <th>số điện thoại </th>
+                                    <th>Thao tác</th>
+                                </tr>
+                                <tr>
+                                    <th>Nguyễn Chí Mạnh</th>
+                                    <th> nmanh230101hy</th>
+                                    <th>nmanh9104@gmail.com</th>
+                                    <th>0566211959</th>
+                                    <th><button class="remove"><i class="fas fa-trash-alt"></i></button></th>
+                                </tr>
+                                <tr>
+                                    <th>Đoàn Trung Hiếu</th>
+                                    <th>dtrunghieu1201</th>
+                                    <th>hieucoidk4@gmail.com</th>
+                                    <th>0566211951</th>
+                                    <th><button class="remove"><i class="fas fa-trash-alt"></i></button></th>
+                                </tr>
+                                <tr>
+                                    <th>Lê Thanh Toàn</th>
+                                    <th>Toanviplol</th>
+                                    <th>Nhunaoker1@gmail.com</th>
+                                    <th>0566211959</th>
+                                    <th><button class="remove"><i class="fas fa-trash-alt"></i></button></th>
+                                </tr>
+                                <tr id="trd">
+
+                                    <th>Vũ Đăng Thắng</th>
+                                    <th>sadboizzzz</th>
+
+                                    <th>thangdang20122001@gmail.com</th>
+                                    <th>0566211959</th>
+                                    <th><button class="remove"><i class="fas fa-trash-alt"></i></button></th>
+                                </tr>
+
+
+                                <tr id="trd">
+                                    <th>Nguyễn Trần Anh Thắng</th>
+                                    <th>Anhthawnglolpro</th>
+                                    <th>thanghym321@gmail.com</th>
+                                    <th>0566211959</th>
+                                    <th><button class="remove"><i class="fas fa-trash-alt"></i></button></th>
+                                </tr>
+                                <!-- <tr id="trd">
+                                    <th>Nguyen Chi Manh</th>
+                                    <th> nmanh230101hy</th>
+                                    <th>nmanh9104@gmail.com</th>
+                                    <th>0566211959</th>
+                                    <th><button class="remove"><i class="fas fa-trash-alt"></i></button></th>
+                                </tr> -->
+                            </tbody>
+
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        $('document').ready(function () {
+            $("#add").click(function () {
+                $(".adduser").show();
+
+            });
+            $("#close").click(function () {
+                $(".adduser").hide();
+
+            });
+            $(".remove").click(function () {
+                if (confirm("Bạn có chắc muốn xóa")) {
+                    $(this).parent().parent().remove();
+                }
+                else {
+                    return false;
+                }
+            });
+
+
+            $('#dangki').click(function () {
+                var te = $('input[name="ten"]').val();
+                var acc = $('input[name="account"]').val();
+                var pass = $('input[name="ten"]').val();
+                var mail = $('input[name="mail"]').val();
+                var sdt = $('input[name="sdt"]').val();
+                var btn = document.createElement("button");
+                var _text = '<tr><th>' + te + '</th> <th>' + acc + '</th>  <th>' + mail + '</th>  <th>' + sdt + '</th></tr>';
+                $('#adder').append(_text);
+            })
+        });
+    </script>
+
+
+</body>
+
+</html>
